@@ -841,13 +841,13 @@ main img.separator {
 
   #intro {
     display: flex;
-    flex-direction: row;
+    flex-direction: column-reverse;
     align-items: flex-end;
     position: relative;
-    padding: 20px;
+    padding: 30px;
     width: 100%;
     height: 40%;
-    justify-content: space-between;
+    justify-content: flex-start;
     background-image: url(img/Rectangle2.svg);
     background-size: cover;
   }
@@ -864,7 +864,7 @@ main img.separator {
   }
 
   .nama {
-    font-size: 19px;
+    font-size: 4vmax;
     font-weight: 700;
   }
   .pekerjaan {
@@ -876,6 +876,7 @@ main img.separator {
   #hero2 ul.medsos {
     display: flex;
     width: 40vw;
+    margin-top: 20px;
     flex-wrap: wrap;
   }
 
@@ -885,7 +886,7 @@ main img.separator {
   }
 
   #hero2 ul.medsos li a img {
-    width: 5vw;
+    width: 6vw;
     background-color: rgba(51, 51, 51, 0.5);
   }
   #hero2 ul.medsos li.instagram a img {
