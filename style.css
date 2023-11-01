@@ -20,7 +20,7 @@ body {
 nav {
   position: absolute;
   width: 100%;
-  padding: 0 15px;
+  padding: 10px 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -29,16 +29,14 @@ nav {
 }
 .logo img {
   position: relative;
-  height: 10vh;
-  margin-top: 2vh;
-  margin-left: 5vh;
+  height: 60px;
 }
 
 .sticky {
   position: fixed;
   margin: 10px;
   width: 98%;
-  padding: 10px 30px;
+  padding: 5px 10px;
   background-color: #000;
   border-radius: 50px;
 }
@@ -112,6 +110,7 @@ nav ul li a:hover {
   display: none;
   width: 35px;
   height: 35px;
+  margin-right: 5px;
   cursor: pointer;
   appearance: none;
   background: none;
@@ -125,7 +124,7 @@ nav ul li a:hover {
   content: '';
   display: block;
   width: 100%;
-  height: 5px;
+  height: 3px;
   background-color: #fff;
   margin: 6px 0px;
   transition: 0.5s;
@@ -155,7 +154,7 @@ h1 {
   background-color: #333;
   width: 100%;
   text-align: center;
-  padding: 4.5vh;
+  padding: 20px;
 }
 .author {
   display: flex;
@@ -225,13 +224,13 @@ h1 {
 }
 
 #hero ul.medsos li.instagram a img:hover {
-  border-radius: 0.9vw;
+  border-radius: 30%;
   background-color: #fff;
   box-shadow: inset 0px 0px 50px rgba(255, 255, 0, 0.7);
 }
 
 #hero ul.medsos li.linkedin a img:hover {
-  border-radius: 0.2vw;
+  border-radius: 5%;
   background-color: #fff;
   box-shadow: inset 0px 0px 50px rgba(255, 255, 0, 0.7);
 }
@@ -243,7 +242,7 @@ h1 {
 }
 
 #hero ul.medsos li.gmail a img:hover {
-  border-radius: 0.5vw;
+  border-radius: 20%;
   background-color: #fff;
   box-shadow: inset 0px 0px 50px rgba(255, 255, 0, 0.7);
 }
@@ -716,13 +715,13 @@ main img.separator {
 }
 
 #footer .medsosfoot ul.footmedsos li.instagram a img:hover {
-  border-radius: 0.9vw;
+  border-radius: 30%;
   background-color: #fff;
   box-shadow: inset 0px 0px 50px rgba(228, 64, 95, 0.7);
 }
 
 #footer .medsosfoot ul.footmedsos li.linkedin a img:hover {
-  border-radius: 0.2vw;
+  border-radius: 10%;
   background-color: #fff;
   box-shadow: inset 0px 0px 50px rgba(10, 102, 194, 0.7);
 }
@@ -734,7 +733,7 @@ main img.separator {
 }
 
 #footer .medsosfoot ul.footmedsos li.gmail a img:hover {
-  border-radius: 0.5vw;
+  border-radius: 20%;
   background-color: #fff;
   box-shadow: inset 0px 0px 50px rgba(234, 67, 53, 0.7);
 }
