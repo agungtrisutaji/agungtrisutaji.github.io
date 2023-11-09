@@ -32,3 +32,33 @@ loadMoreBtn.onclick = () => {
     loadMoreBtn.style.display = 'none';
   }
 };
+
+const scriptURL =
+  'https://script.google.com/macros/s/AKfycbyqMDNhws6zLtFyBj-5v-wFaptf6IQqfIaqnIS4XokQsR2r04xiz5wTgmX-tD1JYzsjzQ/exec';
+const form = document.forms['contact-form'];
+const btnSubmit = document.querySelector('.kirim');
+const btnSpinner = document.querySelector('.loading');
+const myAlert = document.querySelector('.alert');
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+
+  btnSpinner.classList.toggle('d-none');
+  btnSubmit.style.display = 'none';
+
+  fetch(scriptURL, {method: 'POST', body: new FormData(form)})
+    .then((response) => {
+      btnSpinner.classList.toggle('d-none');
+      btnSubmit.style.display = 'inline-block';
+      Swal.fire({
+        position: 'center',
+        icon: 'success',
+        title: 'Your message has been sent!',
+        showConfirmButton: false,
+        timer: 1500,
+      });
+      form.reset();
+      console.log('Success!', response);
+    })
+    .catch((error) => console.error('Error!', error.message));
+});
