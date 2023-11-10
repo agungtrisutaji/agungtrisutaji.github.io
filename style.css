@@ -17,6 +17,15 @@ body {
 }
 
 /* Navbar Start************************************Navbar Start */
+
+header h1 {
+  margin: 0;
+}
+
+.bioFirst {
+  min-height: 200px;
+}
+
 nav {
   position: absolute;
   width: 100%;
@@ -27,6 +36,7 @@ nav {
   transition: 0.6s;
   z-index: 999;
 }
+
 .logo img {
   position: relative;
   height: 60px;
@@ -52,6 +62,7 @@ nav ul {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0;
 }
 
 nav ul li {
@@ -180,11 +191,16 @@ h1 {
   font-weight: 700;
 }
 
+#hero .bioFirst {
+  min-height: 300px;
+}
+
 #hero .nama {
   color: #000;
   font-size: 4vmax;
   font-weight: 700;
 }
+
 #hero .pekerjaan {
   color: #909090;
   margin-bottom: 15vh;
@@ -339,7 +355,7 @@ main img.separator {
 #about .opening h2 {
   display: inline-block;
   margin-top: 100px;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   padding: 10px 40px;
   border: 8px solid #000;
 }
@@ -671,16 +687,17 @@ main img.separator {
 #backToTop {
   bottom: 0;
   right: 0;
+  height: 90px;
   display: flex;
   text-decoration: none;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  color: #d7d7d7;
+  color: #d6d6d6;
   margin: 20px;
-  background-color: rgba(24, 23, 23, 0.7);
-  border-radius: 10%;
-  padding: 10px;
+  background-color: rgba(143, 143, 143, 0.3);
+  border-radius: 40%;
+  padding: 5px;
 }
 
 #footer .backToTop img {
@@ -695,6 +712,7 @@ main img.separator {
   display: flex;
   justify-content: center;
   padding: 50px;
+  margin-bottom: 0;
 }
 #footer .medsosfoot ul.footmedsos li {
   list-style: none;
@@ -758,7 +776,7 @@ main img.separator {
   }
 
   nav {
-    margin-top: 50px;
+    margin-top: 55px;
   }
 
   #contact .contactForm {
@@ -877,6 +895,7 @@ main img.separator {
   }
 
   #intro .bio {
+    min-height: 101px;
     text-align: right;
     color: #d7d7d7;
   }
@@ -899,7 +918,7 @@ main img.separator {
 
   #hero2 ul.medsos {
     display: flex;
-    width: 40vw;
+    width: 50vw;
     margin-top: 20px;
     flex-wrap: wrap;
   }
@@ -1008,6 +1027,7 @@ main img.separator {
   #skills ul {
     display: inline-block;
     width: 80vw;
+    padding: 0;
   }
 
   #skills ul li {

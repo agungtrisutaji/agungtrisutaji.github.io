@@ -1,9 +1,7 @@
 window.addEventListener('scroll', function () {
   const navBar = document.querySelector('nav');
   navBar.classList.toggle('sticky', window.scrollY > 0);
-});
 
-window.addEventListener('scroll', function () {
   const toTop = document.getElementById('backToTop');
   toTop.classList.toggle('show', window.scrollY > 500);
 });
@@ -25,6 +23,7 @@ loadMoreBtn.onclick = () => {
   ];
   for (var i = currentItem; i < currentItem + 3; i++) {
     boxes[i].style.display = 'inline-block';
+    boxes[i].style.animation = 'fadeIn 1s ease';
   }
   currentItem += 3;
 
@@ -61,4 +60,12 @@ form.addEventListener('submit', (e) => {
       console.log('Success!', response);
     })
     .catch((error) => console.error('Error!', error.message));
+});
+
+const skillLogo = document.querySelectorAll('.skill-logo');
+
+skillLogo.forEach((logo, i) => {
+  logo.dataset.aos = 'zoom-in';
+  logo.dataset.aosDelay = i * 100;
+  logo.dataset.aosDuration = 1000;
 });
