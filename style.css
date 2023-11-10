@@ -722,7 +722,7 @@ main img.separator {
 
 #footer .medsosfoot ul.footmedsos li a {
   text-decoration: none;
-  padding: 10px;
+  padding: 15px;
   background-color: #333;
   margin: 10px;
   border-radius: 50%;
@@ -816,8 +816,9 @@ main img.separator {
   }
 
   .slide {
-    width: 30%;
+    width: 40%;
     height: 50%;
+    padding-left: 1rem;
     background-color: rgba(0, 0, 0, 0.7);
     z-index: 9999;
     transform: translateX(0);
@@ -826,7 +827,7 @@ main img.separator {
 
   .slide li a {
     display: block;
-    width: 120px;
+    width: 145px;
     margin: 5px;
     padding: 12px 16px;
     background-color: #222222;
