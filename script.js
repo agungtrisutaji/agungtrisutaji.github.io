@@ -45,7 +45,7 @@ form.addEventListener('submit', (e) => {
   btnSpinner.classList.toggle('d-none');
   btnSubmit.style.display = 'none';
 
-  fetch(scriptURL, {method: 'POST', body: new FormData(form)})
+  fetch(scriptURL, { method: 'POST', body: new FormData(form) })
     .then((response) => {
       btnSpinner.classList.toggle('d-none');
       btnSubmit.style.display = 'inline-block';
@@ -59,7 +59,16 @@ form.addEventListener('submit', (e) => {
       form.reset();
       console.log('Success!', response);
     })
-    .catch((error) => console.error('Error!', error.message));
+    .catch((error) => {
+      Swal.fire({
+        position: 'center',
+        icon: 'error',
+        title: `An error occured: \n ${error}`,
+        showConfirmButton: false,
+        timer: 1500,
+      });
+      form.reset();
+    });
 });
 
 const skillLogo = document.querySelectorAll('.skill-logo');

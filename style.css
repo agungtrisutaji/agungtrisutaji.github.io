@@ -687,21 +687,29 @@ main img.separator {
 #backToTop {
   bottom: 0;
   right: 0;
-  height: 90px;
+  height: 75px;
   display: flex;
   text-decoration: none;
   justify-content: center;
-  flex-direction: column;
   align-items: center;
-  color: #d6d6d6;
+  flex-direction: column;
+  color: #e0e0e0;
   margin: 20px;
-  background-color: rgba(143, 143, 143, 0.3);
-  border-radius: 40%;
-  padding: 5px;
+  background-color: rgba(143, 143, 143, 0.5);
+  border-radius: 50% 50% 10% 10%;
+  padding: 2px;
 }
 
-#footer .backToTop img {
-  width: 20px;
+#backToTop:hover {
+  background-color: rgba(110, 110, 110, 0.7);
+}
+
+#backToTop img {
+  margin-top: 10px;
+}
+
+#backToTop p {
+  margin-bottom: 5px;
 }
 
 .show {
@@ -816,7 +824,7 @@ main img.separator {
   }
 
   .slide {
-    width: 40%;
+    width: 4%;
     height: 50%;
     padding-left: 1rem;
     background-color: rgba(0, 0, 0, 0.7);
@@ -1097,6 +1105,7 @@ main img.separator {
   #contact .contactForm {
     margin-top: 20px;
     width: 100%;
+    padding: 20px;
   }
 
   #contact .contactForm .inputBox {
