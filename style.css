@@ -17,11 +17,6 @@ body {
 }
 
 /* Navbar Start************************************Navbar Start */
-
-header h1 {
-  margin: 0;
-}
-
 .bioFirst {
   min-height: 200px;
 }
@@ -87,6 +82,7 @@ nav ul li a {
   text-decoration: none;
   letter-spacing: 2px;
   transition: 0.8s;
+  text-shadow: 0 0 1px #000;
 }
 
 nav ul li a:hover {
@@ -104,7 +100,6 @@ nav ul li a:hover {
 
 .sticky .logo img {
   height: 8vh;
-  margin-top: 1vh;
   margin-left: 0px;
 }
 
@@ -160,13 +155,6 @@ header {
   position: relative;
 }
 
-h1 {
-  color: #d7d7d7;
-  background-color: #333;
-  width: 100%;
-  text-align: center;
-  padding: 20px;
-}
 .author {
   display: flex;
   justify-content: space-around;
@@ -180,6 +168,7 @@ h1 {
   padding-top: 10vh;
   padding-left: 10vh;
   padding-bottom: 10vh;
+  width: 50vw;
 }
 #hero h2 {
   margin-top: 10vh;
@@ -206,9 +195,6 @@ h1 {
   margin-bottom: 15vh;
   font-size: 2vmax;
   font-weight: 800;
-}
-#hero {
-  width: 50vw;
 }
 
 #hero ul.medsos {
@@ -324,7 +310,6 @@ h1 {
 main {
   width: 100%;
   background-color: #d7d7d7;
-  /* position: relative; */
 }
 main img.separator {
   width: 170px;
@@ -394,6 +379,17 @@ main img.separator {
 }
 
 /* Opening End ********************************************* Opening End */
+#projects {
+  text-align: center;
+}
+
+#projects > h2 {
+  display: inline-block;
+  padding: 10px 30px;
+  border: 8px solid #000;
+  margin-top: 81px !important;
+  align-self: center;
+}
 
 /* Skills Start ********************************************* Skills Start */
 #skills {
@@ -605,9 +601,6 @@ main img.separator {
 #contact .content {
   text-align: center;
   margin-bottom: 20px;
-}
-
-#contact .content {
   max-width: 800px;
   letter-spacing: 1px;
   line-height: 25px;
@@ -687,29 +680,21 @@ main img.separator {
 #backToTop {
   bottom: 0;
   right: 0;
-  height: 75px;
+  height: 90px;
   display: flex;
   text-decoration: none;
   justify-content: center;
-  align-items: center;
   flex-direction: column;
-  color: #e0e0e0;
+  align-items: center;
+  color: #d6d6d6;
   margin: 20px;
-  background-color: rgba(143, 143, 143, 0.5);
-  border-radius: 50% 50% 10% 10%;
-  padding: 2px;
+  background-color: rgba(143, 143, 143, 0.3);
+  border-radius: 40%;
+  padding: 5px;
 }
 
-#backToTop:hover {
-  background-color: rgba(110, 110, 110, 0.7);
-}
-
-#backToTop img {
-  margin-top: 10px;
-}
-
-#backToTop p {
-  margin-bottom: 5px;
+#footer .backToTop img {
+  width: 20px;
 }
 
 .show {
@@ -779,14 +764,6 @@ main img.separator {
 
 /* footer End ********************************************* footer End */
 @media screen and (max-width: 1300px) {
-  h1 {
-    padding: 1.5vh;
-  }
-
-  nav {
-    margin-top: 55px;
-  }
-
   #contact .contactForm {
     width: 90%;
   }
@@ -796,7 +773,7 @@ main img.separator {
   }
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 768px) {
   /* Navbar Start ********************************************* Navbar Start */
 
   .burger {
@@ -823,8 +800,8 @@ main img.separator {
     display: none;
   }
 
-  .slide {
-    width: 4%;
+  .slider {
+    width: 40%;
     height: 50%;
     padding-left: 1rem;
     background-color: rgba(0, 0, 0, 0.7);
@@ -833,29 +810,29 @@ main img.separator {
     opacity: 1;
   }
 
-  .slide li a {
+  .slider li a {
     display: block;
     width: 145px;
     margin: 5px;
     padding: 12px 16px;
     background-color: #222222;
   }
-  .slide li a:hover {
+  .slider li a:hover {
     background-color: #303030;
   }
 
-  .slide .NavContact {
+  .slider .NavContact {
     background-color: rgba(0, 0, 0, 0);
     border-radius: 0 0 0 0;
     padding: 0;
   }
 
-  .slide .NavContact a {
+  .slider .NavContact a {
     background-color: #fff;
     color: #000;
     font-weight: 800;
   }
-  .slide .NavContact a:hover {
+  .slider .NavContact a:hover {
     color: #fff;
     background-color: #909090;
     border-radius: 0 0 0 0;
@@ -867,10 +844,6 @@ main img.separator {
 
   /* Hero mobile Start ********************************************* Hero mobile Start */
   #hero {
-    display: none;
-  }
-
-  h1 {
     display: none;
   }
 
@@ -1061,10 +1034,6 @@ main img.separator {
     width: 170px;
   }
 
-  #skills img.separator {
-    margin-top: 50px;
-  }
-
   #footer .footerBottom {
     background-color: #000;
     padding: 20px;
@@ -1105,7 +1074,6 @@ main img.separator {
   #contact .contactForm {
     margin-top: 20px;
     width: 100%;
-    padding: 20px;
   }
 
   #contact .contactForm .inputBox {
@@ -1126,14 +1094,17 @@ main img.separator {
   #footer .medsosfoot ul.footmedsos li {
     width: 20vw;
   }
-  #footer .footerBottom {
-    padding: 5px;
-    font-size: 14px;
+
+  #projects .carousel .carousel-inner p {
+    font-size: small;
+  }
+  #projects .carousel .carousel-inner h2 {
+    font-size: larger;
   }
 }
 
-@media screen and (max-height: 570px) {
-  .slide {
+@media screen and (max-height: 576px) {
+  .slider {
     width: 40%;
     height: 70%;
   }
@@ -1141,10 +1112,33 @@ main img.separator {
   #intro {
     height: 50%;
   }
+
+  #projects .carousel .carousel-inner p {
+    font-size: x-small;
+  }
+  #projects .carousel .carousel-inner h2 {
+    font-size: large;
+  }
 }
 
 @media screen and (max-height: 320px) {
-  .slide li a {
+  .slider li a {
     margin: 0;
+  }
+}
+
+@media screen and (orientation: landscape) {
+  .carousel img {
+    height: 70vh;
+    object-fit: cover;
+    object-position: top;
+  }
+}
+
+@media screen and (orientation: portrait) {
+  .carousel img {
+    height: 40vh;
+    object-fit: cover;
+    object-position: top;
   }
 }

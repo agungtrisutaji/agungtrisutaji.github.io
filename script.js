@@ -11,7 +11,7 @@ const burgerMenu = document.querySelector('nav ul');
 
 burgerButton.addEventListener('click', function () {
   burgerButton.classList.toggle('isActive');
-  burgerMenu.classList.toggle('slide');
+  burgerMenu.classList.toggle('slider');
 });
 
 let loadMoreBtn = document.querySelector('#load-more');
@@ -21,7 +21,7 @@ loadMoreBtn.onclick = () => {
   let boxes = [
     ...document.querySelectorAll('.certificate .box-certificate .box'),
   ];
-  for (var i = currentItem; i < currentItem + 3; i++) {
+  for (let i = currentItem; i < currentItem + 3; i++) {
     boxes[i].style.display = 'inline-block';
     boxes[i].style.animation = 'fadeIn 1s ease';
   }
