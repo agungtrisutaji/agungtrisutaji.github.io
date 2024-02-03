@@ -225,8 +225,8 @@ header {
     0 0 5px #fff500, 0 0 6px #fff500, 0 0 7px #fff500, 0 0 10px #fff500;
 }
 
-#hero ul.medsos li.instagram a img:hover {
-  border-radius: 30%;
+#hero ul.medsos li.whatsapp a img:hover {
+  border-radius: 50% 50% 50% 0;
   background-color: #fff;
   box-shadow: inset 0px 0px 50px rgba(255, 255, 0, 0.7);
 }
@@ -726,10 +726,10 @@ main img.separator {
   width: 2.5vw;
 }
 
-#footer .medsosfoot ul.footmedsos li.instagram a img:hover {
-  border-radius: 30%;
+#footer .medsosfoot ul.footmedsos li.whatsapp a img:hover {
+  border-radius: 50% 50% 50% 0;
   background-color: #fff;
-  box-shadow: inset 0px 0px 50px rgba(228, 64, 95, 0.7);
+  box-shadow: inset 0px 0px 50px rgba(64, 228, 78, 0.7);
 }
 
 #footer .medsosfoot ul.footmedsos li.linkedin a img:hover {
@@ -916,8 +916,8 @@ main img.separator {
     width: 6vw;
     background-color: rgba(51, 51, 51, 0.5);
   }
-  #hero2 ul.medsos li.instagram a img {
-    border-radius: 30%;
+  #hero2 ul.medsos li.whatsapp a img {
+    border-radius: 50% 50% 50% 0;
   }
   #hero2 ul.medsos li.linkedin a img {
     border-radius: 20%;
