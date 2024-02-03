@@ -678,6 +678,7 @@ main img.separator {
 }
 
 #backToTop {
+  z-index: 100;
   bottom: 0;
   right: 0;
   height: 90px;
@@ -858,6 +859,7 @@ main img.separator {
     width: 100vw;
     align-items: center;
   }
+
   #hero2 .photo {
     position: absolute;
     height: 80vh;
