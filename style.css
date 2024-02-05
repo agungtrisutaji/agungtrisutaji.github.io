@@ -392,6 +392,13 @@ main img.separator {
   align-self: center;
 }
 
+#projects img.separator {
+  display: inline-block;
+  margin-top: 100px;
+  margin-bottom: 5px;
+  align-self: center;
+}
+
 /* Skills Start ********************************************* Skills Start */
 #skills {
   display: flex;
@@ -404,7 +411,7 @@ main img.separator {
 
 #skills h2 {
   display: inline-block;
-  margin-top: 100px;
+  margin-top: 80px;
   margin-bottom: 20px;
   padding: 10px 40px;
   border: 8px solid #000;
@@ -420,7 +427,7 @@ main img.separator {
 
 #skills ul {
   display: inline-block;
-  width: 50vw;
+  width: 60vw;
 }
 
 #skills ul li {
@@ -1132,7 +1139,7 @@ main img.separator {
 
 @media screen and (orientation: landscape) {
   .carousel img {
-    height: 70vh;
+    height: 72vh;
     object-fit: cover;
     object-position: top;
   }
